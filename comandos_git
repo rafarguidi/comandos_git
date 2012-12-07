@@ -4,13 +4,11 @@ git mv teste comandos = "renomear arquivo de teste para comandos"
 git rm teste = "para não ver arquivo teste com o git caso o mesmo tenha sido apagado"
 git log = "para ver todo o log dos commits realizados"
 git reset --hard d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "resetar todas as alterações para voltar no commit especificado"
-git checkout d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "voltar no tempo para algum commit podendo fazer um BRANCH"
-git revert d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "desfaz as alterações dakele determinado commit e gera um outro commit"
+git checkout d7aff9c = "voltar no tempo para algum commit podendo fazer um BRANCH"
+git revert d7aff9cc = "desfaz as alterações daquele determinado commit e gera um outro commit"
 git diff = "ver as alterações realizadas"
 git diff --staged = "Ver as alterações (diff) quando elas estão no Index"
-git rebase -i d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "abrir uma lista de commits a partir do commit especificado e apagar da lista
-                                                          os plugins que deverão ser apagados."
-git push origin +master = "subir para o master forçando."
+git push origin +master = "subir os commits para o repositório indicando o branch master."
 
 --------------------------------------------------Boas Práticas no GIT-------------------------------------------------------
 
