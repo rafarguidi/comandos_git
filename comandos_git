@@ -1,0 +1,36 @@
+git reset +arquivo = "retira o arquivo após ter adicionado com git add"
+git reset --hard = "voltar todas as alterações feitas depois do commit"
+git mv teste comandos = "renomear arquivo de teste para comandos"
+git rm teste = "para não ver arquivo teste com o git caso o mesmo tenha sido apagado"
+git log = "para ver todo o log dos commits realizados"
+git reset --hard d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "resetar todas as alterações para voltar no commit especificado"
+git checkout d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "voltar no tempo para algum commit podendo fazer um BRANCH"
+git revert d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "desfaz as alterações dakele determinado commit e gera um outro commit"
+git diff = "ver as alterações feitas nos commits"
+git rebase -i d7aff9cc32bf77acf49f7e35f93d32a84a3a80a3 = "abrir uma lista de commits a partir do commit especificado e apagar da lista
+                                                          os plugins que deverão ser apagados."
+git push origin +master = "subir para o master forçando."
+
+--------------------------------------------------Boas Práticas no GIT-------------------------------------------------------
+
+git checkout -b new_feature = "cria um novo branch"
+git checkout master = "altera para o branch master"
+git pull = "atualiza o branch master"
+git checkout new_feature = "altera para o branch new_feature"
+git rebase master = "atualiza o branch com as alterações ocorridas no master, e gera o possivel conflito no branch deixando o master limpo"
+git checkout master = "altera para o master"
+git merge new_feature = "junta as modificações do branch no master"
+git push = "envia suas alterações para o servidor"
+como apaga o branch criado???
+-----------------------------------------------------------------------------------------------------------------------------
+
+Criar Repositório
+adicionar no arquivo de gitolite-admin, atualizar o servidor e depois:
+git remote add origin gitolite@192.168.0.160:repo_teste
+git clone gitolite@192.168.0.160:redmine_customization
+git checkout -b redmine_renapi origin/redmine_renapi - clonar branch
+adicionar linha no arquivo .git/config
+[branch "master"]
+       remote = origin
+       merge = refs/heads/master
+
